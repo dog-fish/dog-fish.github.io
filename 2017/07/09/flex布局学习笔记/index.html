@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="前端 学习 笔记" />
+  <meta name="keywords" content="flex," />
 
 
 
@@ -93,12 +93,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="在下八斗">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="这是一篇关于flex布局的学习笔记。justify-content flex-start: 元素和容器的左端对齐。 flex-end: 元素和容器的右端对齐。 center: 元素在容器里居中。 space-between:元素之间保持相等的距离。 space-around:元素周围保持相等的距离。   align-items flex-start: 元素与容器的顶部对齐。 flex-end: 元">
+<meta name="keywords" content="flex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flex布局学习笔记">
+<meta property="og:url" content="http://yoursite.com/2017/07/09/flex布局学习笔记/index.html">
 <meta property="og:site_name" content="在下八斗">
+<meta property="og:description" content="这是一篇关于flex布局的学习笔记。justify-content flex-start: 元素和容器的左端对齐。 flex-end: 元素和容器的右端对齐。 center: 元素在容器里居中。 space-between:元素之间保持相等的距离。 space-around:元素周围保持相等的距离。   align-items flex-start: 元素与容器的顶部对齐。 flex-end: 元">
+<meta property="og:updated_time" content="2017-07-09T10:06:24.348Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在下八斗">
+<meta name="twitter:title" content="flex布局学习笔记">
+<meta name="twitter:description" content="这是一篇关于flex布局的学习笔记。justify-content flex-start: 元素和容器的左端对齐。 flex-end: 元素和容器的右端对齐。 center: 元素在容器里居中。 space-between:元素之间保持相等的距离。 space-around:元素周围保持相等的距离。   align-items flex-start: 元素与容器的顶部对齐。 flex-end: 元">
 
 
 
@@ -126,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/09/flex布局学习笔记/"/>
 
 
 
 
 
-  <title>在下八斗</title>
+  <title>flex布局学习笔记 | 在下八斗</title>
   
 
 
@@ -157,9 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,9 +245,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -270,9 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/09/flex布局学习笔记/" itemprop="url">flex布局学习笔记</a></h1>
+          <h1 class="post-title" itemprop="name headline">flex布局学习笔记</h1>
         
 
         <div class="post-meta">
@@ -319,417 +320,127 @@
       
 
       
+        <h2 id="这是一篇关于flex布局的学习笔记。"><a href="#这是一篇关于flex布局的学习笔记。" class="headerlink" title="这是一篇关于flex布局的学习笔记。"></a>这是一篇关于flex布局的学习笔记。</h2><h2 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a>justify-content</h2><ul>
+<li>flex-start: 元素和容器的左端对齐。</li>
+<li>flex-end: 元素和容器的右端对齐。</li>
+<li>center: 元素在容器里居中。</li>
+<li>space-between:元素之间保持相等的距离。</li>
+<li>space-around:元素周围保持相等的距离。</li>
+</ul>
+<hr>
+<h2 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a>align-items</h2><ul>
+<li>flex-start: 元素与容器的顶部对齐。</li>
+<li>flex-end: 元素与容器的底部对齐。</li>
+<li>center: 元素纵向居中。</li>
+<li>baseline: 元素在容器的基线位置显示。</li>
+<li>stretch: 元素被拉伸以填满整个容器。</li>
+</ul>
+<hr>
+<h2 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h2><ul>
+<li>row: 元素摆放的方向和文字方向一致。</li>
+<li>row-reverse: 元素摆放的方向和文字方向相反。</li>
+<li>column: 元素从上放到下。</li>
+<li>column-reverse: 元素从下放到上。</li>
+</ul>
+<hr>
+<h2 id="order"><a href="#order" class="headerlink" title="order"></a>order</h2><ul>
+<li>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</li>
+<li>.item {<br>order: <integer>;<br>}</integer></li>
+</ul>
+<hr>
+<h2 id="align-self"><a href="#align-self" class="headerlink" title="align-self"></a>align-self</h2><ul>
+<li>flex-start: 元素与容器的顶部对齐。</li>
+<li>flex-end: 元素与容器的底部对齐。</li>
+<li>center: 元素纵向居中。</li>
+<li>baseline: 元素在容器的基线位置显示。</li>
+<li>stretch: 元素被拉伸以填满整个容器。</li>
+</ul>
+<hr>
+<h2 id="flex-wrap"><a href="#flex-wrap" class="headerlink" title="flex-wrap"></a>flex-wrap</h2><ul>
+<li>nowrap: 所有的元素都在一行。</li>
+<li>wrap: 元素自动换成多行。</li>
+<li>wrap-reverse: 元素自动换成逆序的多行</li>
+</ul>
+<hr>
+<h2 id="flex-flow"><a href="#flex-flow" class="headerlink" title="flex-flow"></a>flex-flow</h2><ul>
+<li>flex-direction和flex-wrap两个属性经常会一起使用。所以有缩写属性flex-flow。这个缩写属性接受两个属性的值，两个值中间以空格隔开。举个例子，你可以用flex-flow: row wrap。</li>
+</ul>
+<hr>
+<h2 id="align-content"><a href="#align-content" class="headerlink" title="align-content"></a>align-content</h2><ul>
+<li>flex-start: 多行都集中在顶部。</li>
+<li>flex-end: 多行都集中在底部。</li>
+<li>center: 多行居中。</li>
+<li>space-between: 行与行之间保持相等距离。</li>
+<li>space-around: 每行的周围保持相等距离。</li>
+<li>stretch: 每一行都被拉伸以填满容器。</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
         
-          
-          这是一篇关于flex布局的学习笔记。justify-content
-flex-start: 元素和容器的左端对齐。
-flex-end: 元素和容器的右端对齐。
-center: 元素在容器里居中。
-sp
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/09/flex布局学习笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/09/github使用指南/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="八斗">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="在下八斗">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/09/github使用指南/" itemprop="url">github使用指南</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-09T12:26:01+08:00">
-                2017-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/flex/" rel="tag"># flex</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          这是一篇关于github的使用指南，方便用时查阅。
-
-1.添加 SSHkey1$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;   # 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/09/github使用指南/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/09/github使用指南/" rel="next" title="github使用指南">
+                <i class="fa fa-chevron-left"></i> github使用指南
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
+          <span class="post-nav-divider"></span>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/09/git使用指南/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="八斗">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="在下八斗">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/09/git使用指南/" itemprop="url">git使用指南</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-09T10:14:28+08:00">
-                2017-07-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          git指令比较多，比较容易忘记，故此记录下，方便用时查阅。
-1.安装git
-2.配置用户信息12$ git config --global user.name &quot;your name&quot
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/09/git使用指南/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/08/JvasScript高级程序设计阅读指南/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="八斗">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="在下八斗">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/08/JvasScript高级程序设计阅读指南/" itemprop="url">JvasScript高级程序设计阅读指南</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T16:17:23+08:00">
-                2017-07-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          这是一篇关于JavaScript高级程序设计这本书的阅读指南。
-
-第一章随便看看了解历史。
-第二章简单看看，script 里的 defer 和 async 属性了解下就好了，noscript 不用看。
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/08/JvasScript高级程序设计阅读指南/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -737,6 +448,10 @@ sp
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -756,8 +471,17 @@ sp
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -810,6 +534,22 @@ sp
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#这是一篇关于flex布局的学习笔记。"><span class="nav-number">1.</span> <span class="nav-text">这是一篇关于flex布局的学习笔记。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#justify-content"><span class="nav-number">2.</span> <span class="nav-text">justify-content</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#align-items"><span class="nav-number">3.</span> <span class="nav-text">align-items</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#flex-direction"><span class="nav-number">4.</span> <span class="nav-text">flex-direction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#order"><span class="nav-number">5.</span> <span class="nav-text">order</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#align-self"><span class="nav-number">6.</span> <span class="nav-text">align-self</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#flex-wrap"><span class="nav-number">7.</span> <span class="nav-text">flex-wrap</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#flex-flow"><span class="nav-number">8.</span> <span class="nav-text">flex-flow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#align-content"><span class="nav-number">9.</span> <span class="nav-text">align-content</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -923,10 +663,10 @@ sp
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
